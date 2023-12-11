@@ -1,0 +1,46 @@
+/* Education CSS */
+
+div.grid {
+    display: grid;
+    outline: none;
+    grid-template-columns: 60% 20% 20%;
+}
+
+.education_content {
+    outline: none;
+    grid-column: 1;
+    grid-row: 1 / span 1;
+}
+
+#fairmont {
+    outline: none;
+    grid-column: 2;
+    grid-row: 1 / span 1;
+    height: 500px;
+}
+
+#sinclair {
+    outline: none;
+    grid-column: 3;
+    grid-row: 1 / span 1;
+    height: 500px;
+}
+
+body {
+    margin: 0 20% 0 20%;
+}
+
+article, footer {
+    padding: 25px 25px 25px 25px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    div.grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    article {
+        column-count: 1;
+    }
+}
